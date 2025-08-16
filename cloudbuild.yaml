@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-f', 'Dockerfile.prod', '-t', 'us-central1-docker.pkg.dev/mlops12-carlos-sanchez/repo-proyecto-revenue-streamlit/image-v2-api-datapath:latest', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/mlops12-carlos-sanchez/repo-proyecto-revenue-streamlit/image-v2-api-datapath:latest']

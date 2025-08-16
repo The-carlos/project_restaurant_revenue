@@ -1,0 +1,13 @@
+.git
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.env
+.venv/
+venv/
+.devcontainer/
+notebooks/
+data/             # si NO necesitas datos locales dentro de la imagen
+*.csv

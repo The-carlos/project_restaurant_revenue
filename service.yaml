@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: servicio-modelo-revenue-carlos-sanchez
+spec:
+  template:
+    spec:
+      containers:
+        - image: us-central1-docker.pkg.dev/mlops12-carlos-sanchez/repo-proyecto-revenue-streamlit/image-v2-api-datapath:latest
+          env:
+          ports:
+            - containerPort: 8080
